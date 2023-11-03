@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to Font Awesome CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/Logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <div id="hero-text">
+                <h1>
+                  Hello! I'm <span>Thu Dong</span>, <br>
+                  a performer<br>
+                  stage/costume designer<br>
+                  based in Hanoi, Vietnam.
+                </h1>
+              </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/Phone background.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello, my name is Thu Dong and I have been dancing since I can remember. My passion for dance led me to become a professional performer before I started primary school. Dancing has been such a huge part of my life that I can hardly imagine where I would be without it. In all my years of performing, my love for visual art, especially stage and costume design, has only continued to grow.
+
+                    While performers like myself often receive the spotlight, I have always been more inspired by the dedication and hard work of those behind the scenes. Stage and costume designers work tirelessly and put in long hours in order to create the perfect atmosphere for a performance. They are the unsung heroes of any production, often going unnoticed and unappreciated. 
+                    
+                    Their skill and knowledge in various fields never ceases to amaze me, which has led me to aspire to become the next crucial crew member behind the stage. My ultimate goal is to work alongside these talented individuals and to bring my own creative vision to their expertise. I am excited about the opportunities that await me and I'm looking forward to contributing to the world of visual art. Thank you for taking the time to read a little bit about me.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')"><i class="fas fa-wrench"></i> Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')"><i class="fas fa-briefcase"></i> Experience</p>
+                    <p class="tab-links" onclick="opentab('education')"><i class="fas fa-graduation-cap"></i> Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><i class="fas fa-microphone"></i> <span>Performing dance</span><br>Performing professionally in ballet, contemporary, dancesport,jazz</li>
+                        <li><i class="fas fa-tshirt"></i> <span>Stage and Costume design</span><br>Design Theatricalstage and Classical/Contemporary costume</li>
+                        <li><i class="fas fa-chalkboard-teacher"></i> <span>Teaching</span><br>Teaching Pilates, Ballet and Strength conditioning</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><i class="fas fa-briefcase"></i> <span>2007 - Current</span><br>Professional-Freelance performer</li>
+                        <li><i class="fas fa-briefcase"></i> <span>2018 - 2021</span><br>First Soloist at Experimental Theatre company</li>
+                        <li><i class="fas fa-chalkboard-teacher"></i> <span>2019 - Current</span><br>Ballet/Pilates Instructor- Head director at Opsipova dance studio</li>
+                        <li><i class="fas fa-tshirt"></i> <span>2018 - Current</span><br>Freelance Stage-Costume designer</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><i class="fas fa-graduation-cap"></i> <span>2021</span><br>Diploma of Performing art of Theatre dancing at Vietnam Academy of Dance</li>
+                        <li><i class="fas fa-graduation-cap"></i> <span>2022</span><br>Professional training at Broadway dance</li>
+                        <li><i class="fas fa-graduation-cap"></i> <span>2026</span><br>Bachelor of Art from Fulbright university Vietnam</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-theater-masks"></i>
+                <h2>Performing</h2>
+                <p>As a trained and graduated professional ballet-contemporary dancer, I also proudly dance Vietnam traditional dance as it is a part of my heritage. Currently, I am expanding my knowledge by studying Jazz and Afro dance in an academic research approach as well as a practical aspect to understand the effects of globalization and the expansion of African-American culture in Vietnam.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-tshirt"></i>
+                <h2>Designing</h2>
+                <p>I have self-taught costume designing, starting from how to do back stitches to hand sewing whole dresses with beading and embroidery. I also enjoy stage design, as it allows me to apply creativity in various scenarios and bring my dream scenarios to life.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h2>Teaching</h2>
+                <p>Inspired by my mother, who taught me to strive to be a good teacher, no matter what career I choose. Starting at the young age of 17, I began teaching and have since expanded my knowledge beyond dance to reach a diverse range of students, from young children to senior adults. Teaching allows me to meet people from different fields and I am grateful for the opportunity to constantly learn and grow from my students.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/WORK1D.png">
+                <div class="layer">
+                    <h3>Performing</h3>
+                    <p>The stage connects me to the amazing people around the world. Be my audience!</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/WORK3A.png">
+                <div class="layer">
+                    <h3>Designing</h3>
+                    <p>The advancement in design takes me back to my childhood and allows me to exceed beyond just being a performer. Snow white actually a villian, why not?</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/WORK4.png">
+                <div class="layer">
+                    <h3>Teaching</h3>
+                    <p>The teaching opportunities give me the chance to know the talented people around the world. A Computer engineer can dance like a pro, why not?</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> nguyenhienthudong09112003@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 0961327653</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/My-cv.pdf" download class="btn btn2"><i class="fas fa-download"></i> Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2"><i class="fas fa-paper-plane"></i> Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; ThuDong. Made with <i class="fas fa-heart"></i> by <a href="https://www.youtube.com/watch?v=P6VKvxv9LGY">EdgeEditions</a></p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemeu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemeu.style.right = "-200px";
+    }
+</script>
+<script>
+  const scriptURL = '< add you own link here >' // add your THE script link here
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function() {
+          msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
